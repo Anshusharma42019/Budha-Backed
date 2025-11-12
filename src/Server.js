@@ -8,8 +8,8 @@ const app = express();
 // Middleware
 app.use(cors({
   origin: [
-    "https://regalia-backend.vercel.app",
-    "https://regaliafrontend.vercel.app",
+    "https://budha-backed.vercel.app",
+    "https://budha-f-virid.vercel.app",
     "http://localhost:4000",
     "http://localhost:5173",
     
