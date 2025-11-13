@@ -62,7 +62,7 @@ foodType: {
 },
 functionType: {
 type: String,
-enum: ["Ring ceremony", "Wedding", "Tilak","Birthday","Anniversary","Mundan","Sangeet + Mehndi","Corporate meeting","Haldi function" ,"Farewell"],
+enum: ["Ring ceremony", "Wedding", "Tilak","Birthday","Anniversary","Mundan","Sangeet + Mehndi","Corporate meeting","Haldi function" ,"Farewell", "Other"],
 default:"Wedding",
 },
 bookingStatus: {
