@@ -65,6 +65,7 @@ type: String,
 enum: ["Ring ceremony", "Wedding", "Tilak","Birthday","Anniversary","Mundan","Sangeet + Mehndi","Corporate meeting","Haldi function" ,"Farewell", "Other"],
 default:"Wedding",
 },
+customFunctionType: { type: String, trim: true },
 bookingStatus: {
   type: String,
   enum: ["Tentative", "Confirmed", "Enquiry"], 
