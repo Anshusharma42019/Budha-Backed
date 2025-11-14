@@ -10,7 +10,7 @@ app.use(cors({
   origin: [
     "https://budha-backed.vercel.app",
     "https://buddha-banquet.vercel.app",
-    "http://localhost:4000",
+    "https://budha-backed.vercel.app",
     "http://localhost:5173",
     
   ],

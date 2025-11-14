@@ -108,9 +108,16 @@ exports.getBookingById = async (req, res) => {
     console.log("Booking:", booking);
     console.log("Menu (categorizedMenu):", menu);
 
+    // Prepare the response with proper menu structure
+    const bookingData = booking.toObject();
+    
+    // If menu exists, merge its categories into the booking's categorizedMenu
+    if (menu && menu.categories) {
+      bookingData.categorizedMenu = menu.categories;
+    }
+
     res.status(200).json({
-      ...booking.toObject(),
-      categorizedMenu: menu ? menu.toObject() : null
+      booking: bookingData
     });
   } catch (err) {
     console.error("Error fetching booking:", err.message);
